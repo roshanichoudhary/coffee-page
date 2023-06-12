@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  margin: 0px;
+}
+
+/* css started for navigation bar */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333A;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* css end for navigation bar */
+
+/* css related to section 1 with background image */
+
+#section-1 {
+  background-image: url('././img/Cafe3.jpeg');
+  height: 700px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: relative; */
+  border-bottom-width: 8px;
+  border-bottom-style: solid;
+  border-image: linear-gradient(to right, orange, red) 1;
+
+}
+
+#section-1 h1,
+h2 {
+  color: white;
+  text-align: center;
+
+}
+
+#title-container {
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#section-1 img {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+
+  50% {
+    left: 0px;
+    top: 30px;
+  }
+
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* section 1 css end here */
+
+/* section 2 css started from here */
+
+#section-2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+.card {
+  width: calc(25% - 4px);
+  height: 250px;
+  float: left;
+  /* background-color: gray; */
+  margin: 2px;
+  text-align: center;
+  transition: border-top-right-radius 0.5s, border-bottom-left-radius 0.5s;
+  padding-top: 20px;
+}
+
+.card h3 {
+  transition: letter-spacing 0.5s;
+}
+
+.card:hover {
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  background-color: brown;
+}
+
+.card>h3 {
+  letter-spacing: 8px;
+}
+
+.card:hover p {
+  color: white;
+}
+
+.card:hover h3 {
+  letter-spacing: 16px;
+}
+
+.card>img {
+  width: 30px;
+  height: 30px;
+}
+
+
+
+#left-section,
+#right-section {
+  /* display: inline-block; */
+  width: calc(50% - 4px);
+  background-color: red;
+  margin: 2px;
+  height: 480px;
+  float: left;
+  border-radius: 40px;
+}
+
+.video-mask {
+  width: 320px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* section 2 css end here */
+
+/* section 3 start here */
+#section-3 {
+  background-image: url('././img/cafe1.jpg');
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#section-3 h1,
+h2 {
+  color: white;
+  text-align: center;
+}
+
+#section-3 h1 {
+  color: red;
+  text-align: center;
+}
+
+#section-3>h2 {
+  color: white;
+  text-align: center;
+}
+
+/* section 3 end here */
+
+/* section 4 start here */
+
+#section-4 {}
+
+#section-4-top {
+  height: 100px;
+
+  width: 100%;
+  overflow: auto;
+
+}
+
+#section-4-top-left {
+  width: calc(50% - 100px);
+  background-color: pink;
+  float: left;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+#section-4-top-left hr {
+  width: 100%;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: gray;
+}
+
+#section-4-top-middle {
+  width: 200px;
+
+  float: left;
+  height: 100px;
+}
+
+.float-left {
+  float: left;
+}
+
+#section-4-top-middle-inner-item {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-4-top-middle-inner-item img {
+  width: 40px;
+
+
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 30px;
+  border-style: none;
+}
+
+/* section 4 end here */
